@@ -1,0 +1,296 @@
+
+/*estilo geral*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.cherry-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: brown;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo{
+    color: rgb(255, 255, 255);
+    font-size: 38px;
+    text-align: center;
+    text-decoration: none;
+}
+
+h2.titulo span{
+    color: rgb(111, 6, 6);
+}
+
+button:hover{
+    box-shadow: 0px 0px 8px rgba(165, 42, 42, 0.858); 
+    transform: scale(1.05);
+}
+
+/*estilo do cabeçalho*/
+header{
+    padding: 40px 4%;
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+
+}
+
+header a{
+     color: rgb(127, 126, 126);
+     text-decoration: none;
+     display: inline-block;
+     transition: .2s;
+}
+
+header a:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/*Topo do site*/
+section.topo-do-site{
+   padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.topo-do-site h1 span{
+    color: rgb(118, 0, 0)
+}
+
+.topo-do-site p{
+    color: rgb(255, 255, 255);
+    margin: 35px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    height: 450px;
+    width: 450px;
+
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+       top: 30px;
+  }
+}
+
+/*estilo-habilidade*/
+section.habilidades{
+    padding: 40px 4%;
+}
+
+section.habilidades .flex{
+    gap: 60px;
+}
+
+.habilidades .habilidades-box{
+    color: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.habilidades .habilidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(227, 61, 61, 0.41);
+}
+
+.habilidades .habilidades-box i{
+    font-size: 80px;
+    color: rgb(114, 0, 0);
+}
+
+.habilidades .habilidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/*Sobre estilo*/
+section.futuro{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgba(163, 163, 163, 0.162);
+}
+
+.futuro .txt-sobre{
+    color: rgb(255, 255, 255);
+
+}
+
+section.futuro .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.futuro .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.futuro .txt-sobre h2 span{
+    color: brown;
+    display: block;
+}
+
+.futuro .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.futuro .txt-sobre .cherry-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(126, 0, 0);
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+    margin-bottom: 40px;
+}
+
+/*Entre em contato*/
+
+section.falecomigo{
+    padding: 80px 4%;
+}
+.titulo{
+    margin-bottom: 20px;
+}
+.text{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sociais {
+    text-align: center;
+    border: none;
+    padding: 10px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.gmail {
+  font-size: 25px;
+  background-color: brown;
+  font-weight: 500;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 30px;
+  margin: 0 10px;
+}
+.telephone {
+  font-size: 25px;
+  background-color: brown;
+  font-weight: 500;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 30px;
+  margin: 0 10px;
+}
+.tiktok {
+  font-size: 25px;
+  background-color: brown;
+  font-weight: 500;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 30px;
+  margin: 0 10px;
+}
+
+.sociais2 {
+    text-align: center;
+    border: none;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.instagram{
+    font-size: 25px;
+    background-color: brown;
+    font-weight: 500;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 30px;
+  margin: 0 10px;
+}
+.twitter{
+    font-size: 25px;
+    background-color: brown;
+    font-weight: 500;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 30px;
+  margin: 0 10px;
+}
+
+/*RODAPE*/
+footer{
+    padding: 10px 4%;
+    box-shadow: 0 0 40px 10px rgba(163, 163, 163, 0.162);
+}
+
+footer .line{
+    padding: 20px 0;
+    border-bottom: 3px solid brown;
+}
+
+
+footer .line p{
+    color: rgb(255, 255, 251);
+
+}
+footer .line p i {
+  color: brown;
+
+}
